@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Eve Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- snowflakes -->
+    <div id="snowflakes"></div>
+
+    <!-- container -->
+    <div class="container">
+        <div class="header">
+            <h1>🎄 Christmas Eve 🎄</h1>
+            <p>Scroll through festive moments</p>
+        </div>
+
+        <!-- main scroll container -->
+        <div class="scroll-container">
+            <!-- left scroll button -->
+            <button class="scroll-button prev" id="prevBtn" aria-label="Scroll left">
+                &#10094;
+            </button>
+
+            <!-- columns wrapper -->
+            <div class="columns-wrapper" id="columnsWrapper">
+                <div class="column target-current" data-index="0">
+                    <span class="column-icon">❄️</span>
+                    <h3 class="column-title">Winter Frost</h3>
+                    <p class="column-text">Fresh snow blankets the earth, creating a magical winter wonderland</p>
+                </div>
+
+                <div class="column" data-index="1">
+                    <span class="column-icon">🎅</span>
+                    <h3 class="column-title">Santa's Journey</h3>
+                    <p class="column-text">Delivering joy and happiness to children around the world</p>
+                </div>
+
+                <div class="column" data-index="2">
+                    <span class="column-icon">🎁</span>
+                    <h3 class="column-title">Gift Giving</h3>
+                    <p class="column-text">Sharing love and appreciation with those we hold dear</p>
+                </div>
+
+                <div class="column" data-index="3">
+                    <span class="column-icon">🕯️</span>
+                    <h3 class="column-title">Candlelight</h3>
+                    <p class="column-text">Warm glowing flames illuminate the festive night</p>
+                </div>
+
+                <div class="column" data-index="4">
+                    <span class="column-icon">⛄</span>
+                    <h3 class="column-title">Snowman Fun</h3>
+                    <p class="column-text">Building memories and laughter in the snowy landscape</p>
+                </div>
+
+                <div class="column" data-index="5">
+                    <span class="column-icon">🔔</span>
+                    <h3 class="column-title">Jingle Bells</h3>
+                    <p class="column-text">Sweet sounds of holiday cheer filling the crisp air</p>
+                </div>
+
+                <div class="column" data-index="6">
+                    <span class="column-icon">✨</span>
+                    <h3 class="column-title">Christmas Spirit</h3>
+                    <p class="column-text">The magic and wonder that brings everyone together</p>
+                </div>
+            </div>
+
+            <!-- right scroll button -->
+            <button class="scroll-button next" id="nextBtn" aria-label="Scroll right">
+                &#10095;
+            </button>
+        </div>
+
+        <!-- scroll marker group -->
+        <div class="scroll-marker-group" id="markerGroup"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
